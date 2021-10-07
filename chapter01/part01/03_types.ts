@@ -10,6 +10,7 @@ let b1: "male" | "female";
 b1= "male";
 b1= "female";
 
+//联合类型
 let c1 : boolean | string;
 
 c1 = true;
@@ -33,14 +34,14 @@ e = "hello";
 let s:string;
 
 //d的类型时any，它是可以赋值给任意变量
-//s = d;
+s = d;
 
 e = 'hello';
 
 //unknown 实际上就是一个类型安全的any
 //unknown 类型的变量，不是直接赋值给其他变量
 
-// s = e;
+s = e;
 if (typeof e === "string") {
     s = e;
     

@@ -1,8 +1,12 @@
 let a:number;
-//a 的类型设置为number，在以前的使用过程中a的值只能是数字
+//a 的类型设置为number，在以后的使用过程中a的值只能是数字
 
 a = 10;
 // a = 'hello';//此行代码会报错，因为变量a的类型时number，不是赋值字符串
+a = 'hello';
+//null和undefined都不会报错
+a = null;
+a = undefined;
 
 let b: string;
 b = 'hello';
@@ -12,7 +16,7 @@ b = 'hello';
 // let c: boolean = false;
 
 // 如果变量的声明和赋值时同时进行的，TS可以自动对变量进行类型检测
-let c= false;
+let c = false;
 
 c = true;
 
